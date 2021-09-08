@@ -22,13 +22,13 @@
   </thead>
   <tbody>
   <tr>
-@foreach($dato as $value)
-    <td class="table-secondary">{{$value->idcliente}}</td>
-    <td class="table-secondary">{{$value->apellido}}</td>
-    <td class="table-secondary">{{$value->nombre}}</td>
-    <td class="table-secondary">{{$value->iddocumento}}</td>
-    <td class="table-secondary">{{$value->idnumero}}</td>
-    <td class="table-secondary">{{$value->sexo}}</td>
+@foreach($clientes as $cliente)
+    <td class="table-secondary">{{$cliente->idcliente}}</td>
+    <td class="table-secondary">{{$cliente->apellido}}</td>
+    <td class="table-secondary">{{$cliente->nombre}}</td>
+    <td class="table-secondary">{{$cliente->iddocumento}}</td>
+    <td class="table-secondary">{{$cliente->idnumero}}</td>
+    <td class="table-secondary">{{$cliente->sexo}}</td>
 
 </tr>
 @endforeach

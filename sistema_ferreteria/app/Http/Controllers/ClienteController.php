@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\cliente;
+use App\Models\cliente;
 
 class ClienteController extends Controller
 {
@@ -17,7 +17,7 @@ class ClienteController extends Controller
         //
         $cliente=Cliente::all();
         return view('cliente')
-        ->with('dato',$cliente);
+        ->with('clientes',$cliente);
     }
 
     /**
